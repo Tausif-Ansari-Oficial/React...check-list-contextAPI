@@ -23,15 +23,16 @@ export default function Main() {
         <div className="">
 {/* this is main heading */}
           <h3 className='d-flex justify-content-center'>What is youre faurete game here?</h3>
+            
 {/* checked UI */}
-          <div className="flex fix">{/* here fix means (100px height) */}
-{/* "Ternory_operator" is a component. which is contantain all  */}
-            <Ternory_operator bgmi={<BGMI/>}/>
-            <Ternory_operator freeFire={<FreeFire/>}/>
+          <div className="flex fix">  {/* here fix means (100px height) */}
+              
+{/* "Ternory_operator" is a component. which is contantain all chack box element, if checkbox selected then show checked item to UI, If not then null */}
+            <Ternory_operator bgmi={<BGMI/>}/> {/* 'bgmi' is props, it has pass a component to "Ternory_operator" */}
+            <Ternory_operator freeFire={<FreeFire/>}/> {/* componets just a image */}
             <Ternory_operator clashOfClans={<ClashOfClance/>}/>
             <Ternory_operator smackDown={<SmackDown/>}/>
-          </div>
-        
+          </div>        
         <div className="flex">
           <Checkbox />
         </div>
