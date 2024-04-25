@@ -40,25 +40,3 @@ export default function Main() {
       </Acontex.Provider>
     )
   }
-
-
-
-// import React, { createContext, useState } from 'react';
-// import Checkbox from './Checkbox';
-
-// export const Acontex = createContext();
-
-// export default function Main() {
-//   const [state, setState] = useState({
-//     DDLJ: false,
-//     raees: false,
-//   });
-
-//   return (
-//     <Acontex.Provider value={{ state, setState }}>
-//       Check box heading
-//       <Checkbox />
-//       {console.log(state)}
-//     </Acontex.Provider>
-//   );
-// }
