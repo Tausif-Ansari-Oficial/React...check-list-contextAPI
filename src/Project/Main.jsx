@@ -6,10 +6,11 @@ import FreeFire from './Game/FreeFire'
 import ClashOfClance from './Game/ClashOfClance'
 import SmackDown from './Game/SmackDown'
 import './style.css'
-
+// assign create "createContect()" hook into a variable to provide state to all child components
 export const Acontex=createContext()
 
 export default function Main() {
+// state 
     const [state,setState]=useState({
       BGMI:false,
       freeFire:false,
@@ -20,8 +21,11 @@ export default function Main() {
       <Acontex.Provider value={{state,setState}} >
 
         <div className="">
+{/* this is main heading */}
           <h3 className='d-flex justify-content-center'>What is youre faurete game here?</h3>
-          <div className="flex fix">
+{/* checked UI */}
+          <div className="flex fix">{/* here fix means (100px height) */}
+{/* "Ternory_operator" is a component. which is contantain all  */}
             <Ternory_operator bgmi={<BGMI/>}/>
             <Ternory_operator freeFire={<FreeFire/>}/>
             <Ternory_operator clashOfClans={<ClashOfClance/>}/>
