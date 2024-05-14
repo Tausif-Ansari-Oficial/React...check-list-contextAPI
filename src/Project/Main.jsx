@@ -10,7 +10,7 @@ import './style.css'
 export const Acontex=createContext()
 
 export default function Main() {
-// state 
+// useState 
     const [state,setState]=useState({
       BGMI:false,
       freeFire:false,
@@ -18,9 +18,11 @@ export default function Main() {
       smackDown:false,
     })
   return (
+{/* this is a context provider (a createContext() hook) which is provide state to all child compponents */}
       <Acontex.Provider value={{state,setState}} >
 
         <div className="">
+            
 {/* this is main heading */}
           <h3 className='d-flex justify-content-center'>What is youre faurete game here?</h3>
             
@@ -34,10 +36,12 @@ export default function Main() {
             <Ternory_operator smackDown={<SmackDown/>}/>
           </div>        
         <div className="flex">
+            
+{/* this checkbox components which is contain each checklist items */}
           <Checkbox />
         </div>
-          
-          </div>
+        </div>
       </Acontex.Provider>
+{/* end of (creteContext hook) Acontex */}
     )
   }
