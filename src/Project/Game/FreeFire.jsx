@@ -4,7 +4,7 @@ import '../../Project/style.css'
 
 export default function FreeFire() {
   return (
-
+{/* This is only image container (nothig more) */}
     <img src={FF} alt="ff" className='logo'/>
   )
 }
