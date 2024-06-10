@@ -11,16 +11,10 @@ export default function Checkbox() {
 
 // create a changeHandle function to handle each input changes
   const changeHandle = (e) => {
-
-// Extract the name and checked properties from the event's target (the input elements)
-    const { name, checked } = e.target;
-
-// Update the state using setState
-  // Return a new state object that contains all properties of the state  and updates the property accroding to the input's name with its checked value
-    setState((argu) => ({ ...argu, [name]: checked }));
-
-// check state to console
-    console.log(state);
+    const { name, checked } = e.target;// Extract the name and checked properties from the event's target (the input elements)
+    // Update the state using setState
+    setState((argu) => ({ ...argu, [name]: checked }));// Return a new state object that contains all properties of the state  and updates the property accroding to the input's name with its checked value
+    console.log(state);// check state to console
   };
 
   return (
@@ -28,7 +22,7 @@ export default function Checkbox() {
 {/* a normal form tag */}
       <form action="" method="post">
 
-{/* bgmi list */}
+{/* b{/* clash of clans list */}ist */}
       <div className="form-check">
           <input
             className='form-check-input'
@@ -39,7 +33,8 @@ export default function Checkbox() {
           />
           <label htmlFor="BGMI">BGMI</label>
       </div>
-      
+
+{/* f{/* clash of clans list */}ist */}
       <div className="form-check">
           <input
             className='form-check-input'
@@ -50,7 +45,8 @@ export default function Checkbox() {
           />
           <label htmlFor="freeFire">freeFire</label>
         </div>
-        
+
+{/* clash of clans list */}
         <div className="form-check">
             <input
               className='form-check-input'
@@ -61,7 +57,8 @@ export default function Checkbox() {
             />
             <label htmlFor="Clash of Clance">Clash of Clance</label>
           </div>
-        
+
+{/* smack down list */}
         <div className="form-check">
             <input
               className='form-check-input'
