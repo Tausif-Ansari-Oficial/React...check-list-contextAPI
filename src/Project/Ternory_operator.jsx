@@ -6,7 +6,7 @@ function TernaryOperator({bgmi,freeFire,clashOfClans,smackDown}) {
 
   return (
     <div>
-      
+{/* when checklist items was clicked  */}
       {state.BGMI === false ? null : bgmi}
       {state.freeFire === false ? null : freeFire}
       {state.clashOfClans === false ? null : clashOfClans}
